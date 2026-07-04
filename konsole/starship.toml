@@ -1,0 +1,32 @@
+format = "[ $username@$hostname ](bg:#e8e8e8 fg:#2f557f)[ $directory ](bg:#2d3b52 fg:#b8c7ff) $character"
+
+right_format = "$status$time"
+
+add_newline = false
+
+[username]
+show_always = true
+format = "$user"
+
+[hostname]
+ssh_only = false
+format = "$hostname"
+
+[directory]
+format = "$path"
+truncation_length = 1
+truncate_to_repo = false
+home_symbol = ":)"
+
+[character]
+success_symbol = "[❯](fg:white)"
+error_symbol = "[❯](fg:red)"
+
+[time]
+disabled = false
+time_format = "%H:%M:%S"
+format = "(bg:#2d3b52 fg:#39d98a)[ $time ](bg:#a7e8f0 fg:#2d3b52 bold)"
+
+[status]
+disabled = false
+format = "[ $status ](bg:#2d3b52 fg:red)"
